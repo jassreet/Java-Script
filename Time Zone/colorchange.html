@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="id1">Hello Word</h3>
+    <button onclick="hit()">Change Color</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="out()"> Out</button>
+    <button onclick="timeOut()"> time Out</button>
+
+    <script>
+        function hit(){
+            x=document.getElementById('id1').value;
+            z=setInterval(abc,2000)
+             y=setInterval(xyz,4000)
+              a=setInterval(wep,6000)
+        }
+        function abc(){
+            document.getElementById('id1').style.color="red"
+        }
+         function xyz(){
+             document.getElementById('id1').style.color="blue"
+         }
+         function wep(){
+             
+            document.getElementById('id1').style.color="green"
+         }
+         function stop(){
+            clearInterval(z)
+            clearInterval(y)
+            clearInterval(a)
+         }
+         function out(){
+             r=setTimeout(sbc,2000)
+         }
+         function sbc(){
+            alert('hello')
+         }
+         function timeOut(){
+            clearTimeout(r)
+         }
+    </script>
+</body>
+</html>
